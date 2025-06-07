@@ -197,3 +197,4 @@ _build
 
 # User added
 tmp/
+jupyter-book/
