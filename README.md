@@ -15,6 +15,7 @@ mamba activate aidd-spark
 mamba install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1  pytorch-cuda=11.8 -c pytorch -c nvidia
 
 # Install dependencies
+pip install -U pip
 pip install -e .
 ```
 
@@ -27,7 +28,7 @@ jupyter book init  # this will install node.js and other dependencies into ~/.lo
 jupyter book init --write-toc
 jupyter book init --gh-pages  # this will create a new directory called _build/html/
 
-jupyter book start
+jupyter book start --port 8828
 ```
 
 ```bash
