@@ -16,7 +16,11 @@ project:
       children:
         - file: tutorials/a.md
         - file: tutorials/demo.ipynb
-    
+  exports:
+    - format: pdf
+      template: lapreprint-typst
+      articles: README.md
+  
 site:
   template: book-theme
   # options:

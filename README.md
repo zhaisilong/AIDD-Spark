@@ -1,6 +1,8 @@
 # AIDD-Spark
 
++++ {"part": "abstract"}
 Jupyter Notebook Tutorial for AIDD Beginners
++++
 
 ## Setups
 
@@ -29,7 +31,16 @@ jupyter book start
 ```
 
 ```bash
+# https://github.com/typst/typst
+snap install typst
+
+wget https://github.com/typst/typst/releases/download/v0.13.1/typst-x86_64-unknown-linux-musl.tar.xz
+tar -xf typst-x86_64-unknown-linux-musl.tar.xz
+cd typst-x86_64-unknown-linux-musl
+sudo cp typst /usr/local/bin/
+
 jupyter book templates list --pdf
+jupyter book build --pdf
 ```
 
 ```bash
