@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aidd-spark"
+version = "0.0.1"
+description = "AIDD Spark"
+authors = [{ name = "Silong Zhai", email = "zhaisilong@outlook.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+keywords = ["aidd", "tutorial", "jupyter notebook", "spark"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent"
+]
+
+dependencies = [
+  "click",
+  "tqdm",
+  "pandas",
+  "numpy<2",
+  "loguru",
+  "scikit-learn",
+  "jupyter-book==2.0.0a3"
+]
+
+[project.urls]
+Homepage = "https://github.com/zhaisilong/AIDD-Spark"
+
+[project.scripts]
+aidd-spark = "aidd.cli:main"
+
+[tool.setuptools]
+packages = ["aidd"]
