@@ -22,7 +22,7 @@ This tutorial is built with [Jupyter Book](https://next.jupyterbook.org/start).
 
 ```bash
 jupyter book init  # this will install node.js and other dependencies into ~/.local/share/jupyter-book
-jupyter book init --write-toc  # this will write the toc.yml file
+jupyter book init --write-toc
 jupyter book init --gh-pages  # this will create a new directory called _build/html/
 
 jupyter book start
