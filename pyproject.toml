@@ -22,8 +22,19 @@ dependencies = [
   "pandas",
   "numpy<2",
   "loguru",
-  "scikit-learn",
+]
+
+[project.optional-dependencies]
+web = [
   "jupyter-book==2.0.0a3"
+]
+dev = [
+  "jupyter-book==2.0.0a3",
+  "scikit-learn",
+  "rdkit",
+  "matplotlib",
+  "seaborn",
+  "scipy",
 ]
 
 [project.urls]

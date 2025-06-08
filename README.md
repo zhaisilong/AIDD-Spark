@@ -16,7 +16,8 @@ mamba install pytorch==2.5.1 torchvision==0.20.1 torchaudio==2.5.1  pytorch-cuda
 
 # Install dependencies
 pip install -U pip
-pip install -e .
+pip install -e ".[web]"  # 仅安装 web 依赖
+pip install -e ".[dev]"  # 安装所有依赖 用于运行 tutorials 中的 notebook
 ```
 
 ## Build the book
@@ -31,6 +32,8 @@ jupyter book init --gh-pages  # this will create a new directory called _build/h
 jupyter book start --port 8828
 ```
 
+If you want to build the book as a PDF, you need to install Typst.
+
 ```bash
 # https://github.com/typst/typst
 snap install typst
@@ -42,8 +45,4 @@ sudo cp typst /usr/local/bin/
 
 jupyter book templates list --pdf
 jupyter book build --pdf
-```
-
-```bash
-
 ```
